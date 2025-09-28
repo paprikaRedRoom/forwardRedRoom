@@ -15,7 +15,7 @@ app.use(express.json());
 app.post('/ai-api', async (req, res) => {
     try {
         const response = await axios.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
             req.body,
             {
                 headers: {
